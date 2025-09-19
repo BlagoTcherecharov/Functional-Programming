@@ -46,8 +46,9 @@ namespace DelegatePoint
             Console.Write("Enter angle: ");
             angle = int.Parse(Console.ReadLine());
 
-            x_rotate = x * Math.Cos(angle) - y * Math.Sin(angle);
-            y_rotate = x * Math.Sin(angle) + y * Math.Cos(angle);
+            double radian = angle * Math.PI/180;
+            x_rotate = x * Math.Cos(radian) - y * Math.Sin(radian);
+            y_rotate = x * Math.Sin(radian) + y * Math.Cos(radian);
 
             Console.WriteLine("Point after rotation: (" + x_rotate + ", " + y_rotate + ")");
         }
