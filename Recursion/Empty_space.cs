@@ -13,7 +13,6 @@ namespace EmptySpace
             Console.Write(" ");
             if (n > 1)
                 PrintEmptyRec(n - 1);
-
         }
 
         static void PrintEmptyIter(int n)
