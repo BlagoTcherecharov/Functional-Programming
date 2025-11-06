@@ -13,6 +13,17 @@ namespace StarPrint
             Console.Write("*");
             if (n > 1)
                 Print(n - 1);
+            else
+                Console.WriteLine();
+        }
+        
+        static void Line(int n)
+        {
+            if (n > 0)
+            {
+                Print(n);
+                Line(n - 1);
+            }
         }
 
         static void Main(string[] args)
@@ -20,7 +31,7 @@ namespace StarPrint
             Console.Write("Enter number: ");
             int x = int.Parse(Console.ReadLine());
             
-            Print(x);
+            Line(x);
         }
     }
 }
