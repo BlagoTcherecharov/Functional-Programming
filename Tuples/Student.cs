@@ -8,7 +8,7 @@ namespace StudentAverage
 {
     class Program
     {
-        static void Average(Tuple<string, double, double, double, double> student)
+        static void Average(Tuple<string, int, int, int, int> student)
         {
             double average = (student.Item2 + student.Item3 + student.Item4 + student.Item5)/4;
 
@@ -17,7 +17,7 @@ namespace StudentAverage
 
         static void Main(string[] args)
         {
-            Tuple<string, double, double, double, double> student = new Tuple<string, double, double, double, double> ("Ivan Ivanov", 4.50, 3, 5, 6);
+            Tuple<string, int, int, int, int> student = new Tuple<string, int, int, int, int> ("Ivan Ivanov", 4, 3, 5, 6);
 
             Average(student);
         }
