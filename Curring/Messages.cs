@@ -17,14 +17,14 @@ namespace CurringMessages
         {
             Console.Write("Enter first name: ");
             string firstName = Console.ReadLine();
-            Console.Write("Enter second name: ");
-            string secondName = Console.ReadLine();
+            Console.Write("Enter last name: ");
+            string lastName = Console.ReadLine();
             Console.Write("Enter city: ");
             string city = Console.ReadLine();
             Console.Write("Enter daytime (Day, Night, Evening, ...): ");
             string daytime = Console.ReadLine();
 
-            Console.WriteLine(helloMessage(firstName)(secondName));
+            Console.WriteLine(helloMessage(firstName)(lastName));
             Console.WriteLine(welcomeMessage(city));
             Console.WriteLine(dayTimeMessage(daytime));
         }
